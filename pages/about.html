@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="История пекарни «Хлеб & Творчество» и наша команда">
+    <title>О нас — Хлеб & Творчество</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="loader loader--hidden">
+    <div class="loader__spinner"></div>
+</div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="header__logo">
+                <img src="../assets/icons/logo.svg" alt="Логотип" class="header__logo-icon">
+                Хлеб<span>&</span>Творчество
+            </a>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a href="../index.html" class="header__menu-link">Главная</a></li>
+                    <li><a href="catalog.html" class="header__menu-link">Каталог</a></li>
+                    <li><a href="about.html" class="header__menu-link header__menu-link--active">О нас</a></li>
+                    <li><a href="contacts.html" class="header__menu-link">Контакты</a></li>
+                    <li><a href="cart.html" class="header__menu-link">Корзина <span class="header__cart-count" data-cart-count>0</span></a></li>
+                </ul>
+            </nav>
+            <div class="header__controls">
+                <button class="header__theme-toggle" aria-label="Переключить тему">
+                    <span class="header__theme-icon">🌙</span>
+                </button>
+                <button class="header__burger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">О нас</h1>
+            <nav class="breadcrumbs">
+                <a href="../index.html" class="breadcrumbs__link">Главная</a>
+                <span class="breadcrumbs__separator">/</span>
+                <span class="breadcrumbs__current">О нас</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Story -->
+    <section class="story">
+        <div class="container">
+            <h2 class="section-title story__title">Наша история</h2>
+            <div class="story__timeline">
+                <div class="story__item" data-animate="fade-up">
+                    <div class="story__year">2018</div>
+                    <div class="story__content">
+                        <h3 class="story__subtitle">Начало</h3>
+                        <p class="story__text">Мы открыли маленькую семейную пекарню с одной печью и большой мечтой — вернуть людям вкус настоящего хлеба.</p>
+                    </div>
+                </div>
+                <div class="story__item" data-animate="fade-up">
+                    <div class="story__year">2019</div>
+                    <div class="story__content">
+                        <h3 class="story__subtitle">Первые шаги</h3>
+                        <p class="story__text">Завоевали доверие первых клиентов. Начали выпекать хлеб по старинным рецептам с натуральной закваской.</p>
+                    </div>
+                </div>
+                <div class="story__item" data-animate="fade-up">
+                    <div class="story__year">2021</div>
+                    <div class="story__content">
+                        <h3 class="story__subtitle">Расширение</h3>
+                        <p class="story__text">Открыли вторую точку и запустили онлайн-заказы. Добавили веганскую и безглютеновую линейки.</p>
+                    </div>
+                </div>
+                <div class="story__item" data-animate="fade-up">
+                    <div class="story__year">2024</div>
+                    <div class="story__content">
+                        <h3 class="story__subtitle">Сегодня</h3>
+                        <p class="story__text">Команда из 15 человек, 300+ видов выпечки и тысячи довольных клиентов каждый день!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team">
+        <div class="container">
+            <h2 class="section-title team__title">Наша команда</h2>
+            <div class="team__grid">
+                <div class="team__card" data-animate="fade-up">
+                    <div class="team__image-wrapper">
+                        <img src="../assets/images/team-1.svg" alt="Александр" class="team__image">
+                    </div>
+                    <div class="team__info">
+                        <h3 class="team__name">Александр Петров</h3>
+                        <p class="team__role">Главный пекарь</p>
+                        <p class="team__bio">15 лет опыта, чемпион России по хлебопечению 2022</p>
+                    </div>
+                </div>
+                <div class="team__card" data-animate="fade-up">
+                    <div class="team__image-wrapper">
+                        <img src="../assets/images/team-2.svg" alt="Елена" class="team__image">
+                    </div>
+                    <div class="team__info">
+                        <h3 class="team__name">Елена Иванова</h3>
+                        <p class="team__role">Кондитер</p>
+                        <p class="team__bio">Автор уникальных рецептов тортов и десертов</p>
+                    </div>
+                </div>
+                <div class="team__card" data-animate="fade-up">
+                    <div class="team__image-wrapper">
+                        <img src="../assets/images/team-3.svg" alt="Мария" class="team__image">
+                    </div>
+                    <div class="team__info">
+                        <h3 class="team__name">Мария Сидорова</h3>
+                        <p class="team__role">Менеджер</p>
+                        <p class="team__bio">Отвечает за качество обслуживания и ваши улыбки</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="map">
+        <div class="container">
+            <h2 class="section-title map__title">Как нас найти</h2>
+        </div>
+        <div class="map__iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.123456789!2d37.617635!3d55.755814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5b5b5b5b5b%3A0x5b5b5b5b5b5b5b5b!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1234567890" 
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <img src="../assets/icons/logo.svg" alt="Логотип" class="footer__logo">
+                    <p class="footer__text">Свежая выпечка каждый день с любовью и заботой о вас.</p>
+                </div>
+                <div class="footer__menu">
+                    <a href="../index.html" class="footer__link">Главная</a>
+                    <a href="catalog.html" class="footer__link">Каталог</a>
+                    <a href="about.html" class="footer__link">О нас</a>
+                    <a href="contacts.html" class="footer__link">Контакты</a>
+                </div>
+                <div class="footer__contacts">
+                    <a href="tel:+79991234567" class="footer__contact">📞 +7 (999) 123-45-67</a>
+                    <a href="mailto:info@hlebtvorchestvo.ru" class="footer__contact">✉️ info@hlebtvorchestvo.ru</a>
+                    <span class="footer__contact">📍 ул. Пекарная, 12</span>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">Instagram</a>
+                    <a href="#" class="footer__social-link">VK</a>
+                    <a href="#" class="footer__social-link">Telegram</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 Хлеб & Творчество. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toasts -->
+    <div class="toasts" data-toasts></div>
+
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>

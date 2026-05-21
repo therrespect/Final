@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хлеб & Творчество — Главная</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ПРЕЛОАДЕР СРАЗУ СКРЫТ -->
+    <div class="loader loader--hidden">
+        <div class="loader__spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="header__logo">
+                <img src="assets/icons/logo.svg" alt="Логотип" class="header__logo-icon">
+                Хлеб<span>&</span>Творчество
+            </a>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a href="index.html" class="header__menu-link header__menu-link--active">Главная</a></li>
+                    <li><a href="pages/catalog.html" class="header__menu-link">Каталог</a></li>
+                    <li><a href="pages/about.html" class="header__menu-link">О нас</a></li>
+                    <li><a href="pages/contacts.html" class="header__menu-link">Контакты</a></li>
+                    <li><a href="pages/cart.html" class="header__menu-link">Корзина <span class="header__cart-count" data-cart-count>0</span></a></li>
+                </ul>
+            </nav>
+            <div class="header__controls">
+                <button class="header__theme-toggle" aria-label="Переключить тему">🌙</button>
+                <button class="header__burger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero__background">
+            <img src="assets/images/hero-bg.svg" alt="Пекарня" class="hero__image">
+        </div>
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    <span class="hero__title-line">Свежая выпечка</span>
+                    <span class="hero__title-line hero__title-line--highlight">каждый день</span>
+                </h1>
+                <p class="hero__subtitle">Натуральные ингредиенты, традиционные рецепты и немного творчества</p>
+                <div class="hero__cta-group">
+                    <a href="pages/catalog.html" class="button button--primary button--large">Смотреть каталог</a>
+                    <a href="pages/about.html" class="button button--secondary button--large">Наша история</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekly Hits -->
+    <section class="weekly-hits">
+        <div class="container">
+            <h2 class="section-title weekly-hits__title">Хиты недели</h2>
+            <div class="weekly-hits__grid" data-weekly-products></div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title reviews__title">Отзывы наших клиентов</h2>
+            <div class="reviews__slider" data-reviews-slider>
+                <div class="reviews__track" data-reviews-track>
+                    <article class="review-card">
+                        <img src="assets/images/review-bg-1.svg" alt="" class="review-card__bg">
+                        <div class="review-card__header">
+                            <div class="review-card__avatar">АП</div>
+                            <div class="review-card__info">
+                                <h3 class="review-card__name">Анна Петрова</h3>
+                                <div class="review-card__rating">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-card__text">"Лучшая пекарня в городе! Багеты просто восхитительные, а торт на день рождения был шедевром."</p>
+                    </article>
+                    <article class="review-card">
+                        <img src="assets/images/review-bg-2.svg" alt="" class="review-card__bg">
+                        <div class="review-card__header">
+                            <div class="review-card__avatar">ИС</div>
+                            <div class="review-card__info">
+                                <h3 class="review-card__name">Иван Сидоров</h3>
+                                <div class="review-card__rating">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-card__text">"Наконец-то нашёл настоящий ржаной хлеб! Атмосфера пекарни передаётся даже через упаковку."</p>
+                    </article>
+                    <article class="review-card">
+                        <img src="assets/images/review-bg-3.svg" alt="" class="review-card__bg">
+                        <div class="review-card__header">
+                            <div class="review-card__avatar">МК</div>
+                            <div class="review-card__info">
+                                <h3 class="review-card__name">Мария Козлова</h3>
+                                <div class="review-card__rating">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-card__text">"Веганские круассаны — это нечто! Не ожидала, что без масла может быть так вкусно."</p>
+                    </article>
+                </div>
+                <button class="reviews__nav reviews__nav--prev" data-reviews-prev aria-label="Предыдущий отзыв">‹</button>
+                <button class="reviews__nav reviews__nav--next" data-reviews-next aria-label="Следующий отзыв">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <img src="assets/icons/logo.svg" alt="Логотип" class="footer__logo">
+                    <p class="footer__text">Свежая выпечка каждый день с любовью и заботой о вас.</p>
+                </div>
+                <div class="footer__menu">
+                    <a href="index.html" class="footer__link">Главная</a>
+                    <a href="pages/catalog.html" class="footer__link">Каталог</a>
+                    <a href="pages/about.html" class="footer__link">О нас</a>
+                    <a href="pages/contacts.html" class="footer__link">Контакты</a>
+                </div>
+                <div class="footer__contacts">
+                    <a href="tel:+79991234567" class="footer__contact">📞 +7 (999) 123-45-67</a>
+                    <a href="mailto:info@hlebtvorchestvo.ru" class="footer__contact">✉️ info@hlebtvorchestvo.ru</a>
+                    <span class="footer__contact">📍 ул. Пекарная, 12</span>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">Instagram</a>
+                    <a href="#" class="footer__social-link">VK</a>
+                    <a href="#" class="footer__social-link">Telegram</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 Хлеб & Творчество. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toasts -->
+    <div class="toasts" data-toasts></div>
+
+    <!-- Modals -->
+    <div class="modal" data-modal="quick-view">
+        <div class="modal__overlay" data-modal-close></div>
+        <div class="modal__content">
+            <button class="modal__close" data-modal-close aria-label="Закрыть">×</button>
+            <div class="modal__body" data-modal-body></div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Корзина заказов пекарни «Хлеб & Творчество»">
+    <title>Корзина — Хлеб & Творчество</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="loader loader--hidden">
+    <div class="loader__spinner"></div>
+</div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="header__logo">
+                <img src="../assets/icons/logo.svg" alt="Логотип" class="header__logo-icon">
+                Хлеб<span>&</span>Творчество
+            </a>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a href="../index.html" class="header__menu-link">Главная</a></li>
+                    <li><a href="catalog.html" class="header__menu-link">Каталог</a></li>
+                    <li><a href="about.html" class="header__menu-link">О нас</a></li>
+                    <li><a href="contacts.html" class="header__menu-link">Контакты</a></li>
+                    <li><a href="cart.html" class="header__menu-link header__menu-link--active">Корзина <span class="header__cart-count" data-cart-count>0</span></a></li>
+                </ul>
+            </nav>
+            <div class="header__controls">
+                <button class="header__theme-toggle" aria-label="Переключить тему">
+                    <span class="header__theme-icon">🌙</span>
+                </button>
+                <button class="header__burger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">Корзина</h1>
+            <nav class="breadcrumbs">
+                <a href="../index.html" class="breadcrumbs__link">Главная</a>
+                <span class="breadcrumbs__separator">/</span>
+                <span class="breadcrumbs__current">Корзина</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Cart -->
+    <section class="cart">
+        <div class="container">
+            <div class="cart__empty" data-cart-empty>
+                <div class="cart__empty-icon">🧺</div>
+                <h2 class="cart__empty-title">Ваша корзина пуста</h2>
+                <p class="cart__empty-text">Добавьте товары из нашего каталога</p>
+                <a href="catalog.html" class="button button--primary">Перейти в каталог</a>
+            </div>
+            
+            <div class="cart__content" data-cart-content>
+                <div class="cart__items" data-cart-items></div>
+                
+                <aside class="cart__summary">
+                    <h3 class="cart__summary-title">Итого</h3>
+                    <div class="cart__summary-row">
+                        <span>Товары:</span>
+                        <span data-cart-items-count>0 шт</span>
+                    </div>
+                    <div class="cart__summary-row">
+                        <span>Вес:</span>
+                        <span data-cart-total-weight>0 кг</span>
+                    </div>
+                    <div class="cart__summary-row cart__summary-row--total">
+                        <span>Итого к оплате:</span>
+                        <span data-cart-total-price>0 ₽</span>
+                    </div>
+                    
+                    <form class="cart__form" data-order-form>
+                        <h4 class="cart__form-title">Оформление заказа</h4>
+                        <div class="form-group">
+                            <label for="customer-name" class="form-group__label">Имя *</label>
+                            <input type="text" id="customer-name" class="form-group__input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-phone" class="form-group__label">Телефон *</label>
+                            <input type="tel" id="customer-phone" class="form-group__input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="order-date" class="form-group__label">Дата получения *</label>
+                            <input type="date" id="order-date" class="form-group__input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="order-time" class="form-group__label">Время *</label>
+                            <select id="order-time" class="form-group__input" required>
+                                <option value="">Выберите время</option>
+                                <option value="09:00-12:00">09:00-12:00</option>
+                                <option value="12:00-15:00">12:00-15:00</option>
+                                <option value="15:00-18:00">15:00-18:00</option>
+                                <option value="18:00-21:00">18:00-21:00</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="order-comment" class="form-group__label">Комментарий</label>
+                            <textarea id="order-comment" class="form-group__input" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="button button--primary button--block">Оформить заказ</button>
+                    </form>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <img src="../assets/icons/logo.svg" alt="Логотип" class="footer__logo">
+                    <p class="footer__text">Свежая выпечка каждый день с любовью и заботой о вас.</p>
+                </div>
+                <div class="footer__menu">
+                    <a href="../index.html" class="footer__link">Главная</a>
+                    <a href="catalog.html" class="footer__link">Каталог</a>
+                    <a href="about.html" class="footer__link">О нас</a>
+                    <a href="contacts.html" class="footer__link">Контакты</a>
+                </div>
+                <div class="footer__contacts">
+                    <a href="tel:+79991234567" class="footer__contact">📞 +7 (999) 123-45-67</a>
+                    <a href="mailto:info@hlebtvorchestvo.ru" class="footer__contact">✉️ info@hlebtvorchestvo.ru</a>
+                    <span class="footer__contact">📍 ул. Пекарная, 12</span>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">Instagram</a>
+                    <a href="#" class="footer__social-link">VK</a>
+                    <a href="#" class="footer__social-link">Telegram</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 Хлеб & Творчество. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toasts -->
+    <div class="toasts" data-toasts></div>
+
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>

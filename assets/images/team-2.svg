@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#FDF5E6"/>
+  <circle cx="200" cy="200" r="150" fill="#F48FB1" opacity="0.05"/>
+
+  <!-- Shoulders -->
+  <path d="M80 400 L80 340 Q80 300 130 290 L270 290 Q320 300 320 340 L320 400 Z" fill="white"/>
+  <path d="M100 400 L100 350 Q100 320 140 310 L260 310 Q300 320 300 350 L300 400 Z" fill="#F48FB1" opacity="0.25"/>
+
+  <!-- Hair BACK -->
+  <path d="M118 185 Q108 95 160 75 Q200 65 240 75 Q292 95 282 185 Q298 265 260 285 L140 285 Q102 265 118 185" fill="#4A2C2A"/>
+
+  <!-- Neck -->
+  <path d="M172 250 L172 290 Q200 295 228 290 L228 250 Q200 255 172 250" fill="#F5CBA7"/>
+
+  <!-- Face -->
+  <ellipse cx="200" cy="200" rx="64" ry="76" fill="#F5CBA7"/>
+
+  <!-- Hair FRONT -->
+  <path d="M136 180 Q130 125 175 108 Q200 100 225 108 Q270 125 264 180 Q270 215 248 230 L152 230 Q130 215 136 180" fill="#4A2C2A"/>
+  <path d="M142 170 Q148 130 185 118 Q200 112 215 118 Q252 130 258 170" fill="none" stroke="#6D4C41" stroke-width="3" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- Ears -->
+  <ellipse cx="138" cy="205" rx="10" ry="13" fill="#F5CBA7"/>
+  <ellipse cx="262" cy="205" rx="10" ry="13" fill="#F5CBA7"/>
+
+  <!-- Earrings -->
+  <circle cx="130" cy="222" r="5" fill="#FFD700" opacity="0.85"/>
+  <circle cx="270" cy="222" r="5" fill="#FFD700" opacity="0.85"/>
+
+  <!-- Eyes -->
+  <ellipse cx="174" cy="192" rx="9" ry="11" fill="white"/>
+  <ellipse cx="226" cy="192" rx="9" ry="11" fill="white"/>
+  <circle cx="176" cy="194" r="5.5" fill="#4A2C2A"/>
+  <circle cx="228" cy="194" r="5.5" fill="#4A2C2A"/>
+  <circle cx="178" cy="192" r="2" fill="white"/>
+  <circle cx="230" cy="192" r="2" fill="white"/>
+
+  <!-- Eyelashes -->
+  <path d="M165 182 Q174 177 183 182" fill="none" stroke="#2D1B15" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M217 182 Q226 177 235 182" fill="none" stroke="#2D1B15" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Eyebrows -->
+  <path d="M162 172 Q174 168 186 172" fill="none" stroke="#6D4C41" stroke-width="3" stroke-linecap="round"/>
+  <path d="M214 172 Q226 168 238 172" fill="none" stroke="#6D4C41" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M200 202 L197 222 L203 222 Z" fill="#E0A880"/>
+
+  <!-- Mouth -->
+  <path d="M184 242 Q200 252 216 242" fill="none" stroke="#B85C3D" stroke-width="3" stroke-linecap="round"/>
+</svg>

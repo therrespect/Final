@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#FDF5E6"/>
+  <circle cx="200" cy="200" r="150" fill="#D2691E" opacity="0.06"/>
+
+  <!-- Shoulders / Apron -->
+  <path d="M80 400 L80 340 Q80 300 130 290 L270 290 Q320 300 320 340 L320 400 Z" fill="#D2691E"/>
+  <path d="M100 400 L100 350 Q100 320 140 310 L260 310 Q300 320 300 350 L300 400 Z" fill="#E8C39E" opacity="0.5"/>
+
+  <!-- Neck (narrower than face, rounded top) -->
+  <path d="M175 250 L175 290 Q200 295 225 290 L225 250 Q200 255 175 250" fill="#E8B89A"/>
+
+  <!-- Face -->
+  <ellipse cx="200" cy="200" rx="68" ry="78" fill="#E8B89A"/>
+
+  <!-- Hair (BACK - behind ears and face sides) -->
+  <path d="M132 190 Q128 120 165 100 Q200 90 235 100 Q272 120 268 190 Q272 160 250 140 Q200 125 150 140 Q128 160 132 190" fill="#2D1B15"/>
+
+  <!-- Ears -->
+  <ellipse cx="134" cy="205" rx="11" ry="14" fill="#E8B89A"/>
+  <ellipse cx="266" cy="205" rx="11" ry="14" fill="#E8B89A"/>
+
+  <!-- Hair (FRONT - bangs/top, not covering face) -->
+  <path d="M132 180 Q135 130 170 115 Q200 105 230 115 Q265 130 268 180 Q265 150 240 135 Q200 122 160 135 Q135 150 132 180" fill="#2D1B15"/>
+  <path d="M138 170 Q142 140 175 128 Q200 120 225 128 Q258 140 262 170" fill="none" stroke="#3E2723" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Beard shadow -->
+  <path d="M148 230 Q145 265 175 278 Q200 285 225 278 Q255 265 252 230 Q248 250 225 260 Q200 268 175 260 Q152 250 148 230" fill="#2D1B15" opacity="0.12"/>
+
+  <!-- Eyes -->
+  <ellipse cx="172" cy="192" rx="10" ry="12" fill="white"/>
+  <ellipse cx="228" cy="192" rx="10" ry="12" fill="white"/>
+  <circle cx="174" cy="194" r="6" fill="#2D1B15"/>
+  <circle cx="230" cy="194" r="6" fill="#2D1B15"/>
+  <circle cx="176" cy="192" r="2.5" fill="white"/>
+  <circle cx="232" cy="192" r="2.5" fill="white"/>
+
+  <!-- Eyebrows -->
+  <path d="M157 175 Q172 168 187 175" fill="none" stroke="#2D1B15" stroke-width="4" stroke-linecap="round"/>
+  <path d="M213 175 Q228 168 243 175" fill="none" stroke="#2D1B15" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M200 202 L196 226 L204 226 Z" fill="#D4A080"/>
+
+  <!-- Mouth -->
+  <path d="M180 248 Q200 260 220 248" fill="none" stroke="#B85C3D" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Chef hat -->
+  <path d="M148 115 L143 58 Q143 32 170 36 Q190 26 200 32 Q210 26 230 36 Q257 32 257 58 L252 115 Q200 122 148 115" fill="white"/>
+  <path d="M148 115 Q200 122 252 115" fill="none" stroke="#E8E8E8" stroke-width="2"/>
+  <ellipse cx="172" cy="62" rx="14" ry="20" fill="white" stroke="#F0F0F0" stroke-width="1"/>
+  <ellipse cx="200" cy="56" rx="17" ry="24" fill="white" stroke="#F0F0F0" stroke-width="1"/>
+  <ellipse cx="228" cy="62" rx="14" ry="20" fill="white" stroke="#F0F0F0" stroke-width="1"/>
+</svg>

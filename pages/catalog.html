@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — Хлеб & Творчество</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ПРЕЛОАДЕР СРАЗУ СКРЫТ -->
+    <div class="loader loader--hidden">
+        <div class="loader__spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="header__logo">
+                <img src="../assets/icons/logo.svg" alt="Логотип" class="header__logo-icon">
+                Хлеб<span>&</span>Творчество
+            </a>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a href="../index.html" class="header__menu-link">Главная</a></li>
+                    <li><a href="catalog.html" class="header__menu-link header__menu-link--active">Каталог</a></li>
+                    <li><a href="about.html" class="header__menu-link">О нас</a></li>
+                    <li><a href="contacts.html" class="header__menu-link">Контакты</a></li>
+                    <li><a href="cart.html" class="header__menu-link">Корзина <span class="header__cart-count" data-cart-count>0</span></a></li>
+                </ul>
+            </nav>
+            <div class="header__controls">
+                <button class="header__theme-toggle" aria-label="Переключить тему">🌙</button>
+                <button class="header__burger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filters -->
+    <section class="filters">
+        <div class="container">
+            <div class="filters__row">
+                <div class="filters__search">
+                    <input type="text" class="filters__search-input" placeholder="Поиск по товарам..." data-search>
+                </div>
+                <select class="filters__sort" data-sort>
+                    <option value="default">Сортировка</option>
+                    <option value="price-asc">Цена: по возрастанию</option>
+                    <option value="price-desc">Цена: по убыванию</option>
+                    <option value="popular">По популярности</option>
+                    <option value="new">По новизне</option>
+                </select>
+            </div>
+            
+            <div class="filters__groups">
+                <div class="filters__group">
+                    <h3 class="filters__group-title">Категории</h3>
+                    <div class="filters__tags" data-filter-group="category">
+                        <button class="filters__tag filters__tag--active" data-filter="all">Все</button>
+                        <button class="filters__tag" data-filter="bread">Хлеб</button>
+                        <button class="filters__tag" data-filter="pastry">Выпечка</button>
+                        <button class="filters__tag" data-filter="cake">Торты</button>
+                        <button class="filters__tag" data-filter="drink">Напитки</button>
+                    </div>
+                </div>
+                
+                <div class="filters__group">
+                    <h3 class="filters__group-title">Особые требования</h3>
+                    <div class="filters__tags" data-filter-group="allergen">
+                        <button class="filters__tag" data-filter="gluten-free">Без глютена</button>
+                        <button class="filters__tag" data-filter="lactose-free">Без лактозы</button>
+                        <button class="filters__tag" data-filter="vegan">Веганские</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">Наши товары</h2>
+            <div class="products__grid" data-products-grid>
+                <!-- ТОВАРЫ БУДУТ ВСТАВЛЕНЫ СЮДА АВТОМАТИЧЕСКИ -->
+            </div>
+            <div class="products__load-more" data-load-more>
+                <button class="button button--secondary products__load-button">Загрузить ещё</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <img src="../assets/icons/logo.svg" alt="Логотип" class="footer__logo">
+                    <p class="footer__text">Свежая выпечка каждый день с любовью и заботой о вас.</p>
+                </div>
+                <div class="footer__menu">
+                    <a href="../index.html" class="footer__link">Главная</a>
+                    <a href="catalog.html" class="footer__link">Каталог</a>
+                    <a href="about.html" class="footer__link">О нас</a>
+                    <a href="contacts.html" class="footer__link">Контакты</a>
+                </div>
+                <div class="footer__contacts">
+                    <a href="tel:+79991234567" class="footer__contact">📞 +7 (999) 123-45-67</a>
+                    <a href="mailto:info@hlebtvorchestvo.ru" class="footer__contact">✉️ info@hlebtvorchestvo.ru</a>
+                    <span class="footer__contact">📍 ул. Пекарная, 12</span>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">Instagram</a>
+                    <a href="#" class="footer__social-link">VK</a>
+                    <a href="#" class="footer__social-link">Telegram</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 Хлеб & Творчество. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toasts -->
+    <div class="toasts" data-toasts></div>
+
+    <!-- Modals -->
+    <div class="modal" data-modal="quick-view">
+        <div class="modal__overlay" data-modal-close></div>
+        <div class="modal__content">
+            <button class="modal__close" data-modal-close aria-label="Закрыть">×</button>
+            <div class="modal__body" data-modal-body></div>
+        </div>
+    </div>
+
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>
